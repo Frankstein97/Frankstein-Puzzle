@@ -80,13 +80,14 @@ li::marker {
   color: #EC6778;
 }
 #ultimo-mov {
+  margin-top: 1rem;
   border-top: 1px solid #e3ce12;
   border-bottom: 1px solid #e3ce12;
   margin-bottom: 6px;
   width: 80%;
 }
 #flecha{
-  font-size: 60px;
+  font-size: 80px;
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 .col-60 {
@@ -111,6 +112,10 @@ li::marker {
     height: 33%;
     border: 3px black;
 }
+#pieza9 {
+  border: solid -10px black;
+  background-color: #fff;
+}
 #juego div img {
   width: 101%;
 
@@ -122,29 +127,30 @@ li::marker {
 }
 
 .arrow-buttons {
-  display: flex;
+    display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   width: 100%;
-  height: 5rem;
+  
 }
   .arrow-buttons p {
-    padding: 5px;
+ 
     font-size: 2rem;
 
 } .intop {
   margin-bottom: 5px;
   padding: 2px;
-  width: 50px;
-  background-color: #ff1177;
+  width: 6rem;
+  background-color: #cf0937;
 }
-  .inbotom  button {
+  .inbotom button{
     margin: 1px;
     padding: 2px;
-    width: 50px;
-    background-color: #ff1177;
+    width: 6rem;
+    background-color: #cf0937;
   }
+
 
 
 #footer { 

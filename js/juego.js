@@ -135,7 +135,22 @@ function chequearSiGano() {
     
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
-  alert("FELICITACIONES!!! En unas horas va a estar sonando tu telefono para seguir instrucciones.")
+  Swal.fire({
+      icon: 'success',
+          imageUrl: 'images/init.gif',
+          imageWidth: 300,
+          imageHeight: 200,
+          imageAlt: 'Custom image',
+      title: 'GANASTE!!!',
+      text: 'Que tengas una excelente giornata',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+
 }
 
 
