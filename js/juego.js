@@ -1,4 +1,4 @@
-// LO MISMO PERO CAPTURANDO BOTONES (TENDRIA QUE HABER UNA MEJOR FORMA PARA ACORTAR CODIGO Y NO REPETIR)
+// LO MISMO PERO CAPTURANDO BOTONES DEL DOM: (TENDRIA QUE HABER UNA MEJOR FORMA PARA ACORTAR CODIGO Y NO REPETIRLO PERO POR AHORA ASI FUNCIONA)
 
 document.getElementById("top").onclick = function clickTop() {
     var nuevaFilaPiezaVacia
@@ -75,7 +75,7 @@ document.getElementById("left").onclick = function clickLeft() {
       actualizarPosicionVacia(nuevaFilaPiezaVacia, nuevaColumnaPiezaVacia);
   }
     ultimoMov = document.getElementById('flecha');
-    ultimoMov.textContent = '→';
+    ultimoMov.textContent = '←';
     var gano = chequearSiGano();
         if (gano) {
           setTimeout(function() {
