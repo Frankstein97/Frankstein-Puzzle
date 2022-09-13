@@ -142,7 +142,7 @@ function mostrarCartelGanador() {
           imageHeight: 200,
           imageAlt: 'Custom image',
       title: 'GANASTE!!!',
-      text: 'Que tengas una excelente giornata',
+      text: 'Gracias por jugar. Te deseo una excelente giornata :)',
       showClass: {
         popup: 'animate__animated animate__fadeInDown'
       },
