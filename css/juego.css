@@ -1,0 +1,186 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+*{
+  padding: 0px;
+  margin: 0px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/rompecabezas.jpg);
+}
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  color: rgb(236, 31, 31);
+  animation: fadein 2s;
+}
+.titulo h1 {
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  }
+}
+
+
+.col-40 {
+  padding-bottom: 1rem;
+  margin-bottom:1rem ;
+  
+}
+  #instrucciones {
+    border: 2px;
+   
+  }
+
+  #objetivo {
+    border: 2px;
+  }
+  .texto-centrado {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .texto-centrado p {
+    color: #ff1177;
+    text-shadow: 0 0 1px #270916;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .texto-centrado img {
+    width: 250px;
+  }
+
+ul {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #e3ce12;
+  text-shadow: 0 0 3px rgba(174, 166, 0, 0.922);
+}
+li {
+  
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 60px;
+  animation: fadein 5s;
+  text-align: center;
+  border: 1px outset rgb(19, 4, 236);
+  
+}
+li::marker {
+  content: "      ";
+  color: #EC6778;
+}
+#ultimo-mov {
+  border-top: 1px solid #e3ce12;
+  border-bottom: 1px solid #e3ce12;
+  margin-bottom: 6px;
+  width: 80%;
+}
+#flecha{
+  font-size: 60px;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+.col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+
+
+#juego {
+  width: 38rem;
+  height: 38rem;
+}
+  #juego div {
+    text-align: center;
+    animation: fadein 2s;
+  }
+  .pieza {
+    float: left;
+    width: 33%;
+    height: 33%;
+    border: 3px black;
+}
+#juego div img {
+  width: 101%;
+
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.arrow-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 5rem;
+}
+  .arrow-buttons p {
+    padding: 5px;
+    font-size: 2rem;
+
+} .intop {
+  margin-bottom: 5px;
+  padding: 2px;
+  width: 50px;
+  background-color: #ff1177;
+}
+  .inbotom  button {
+    margin: 1px;
+    padding: 2px;
+    width: 50px;
+    background-color: #ff1177;
+  }
+
+
+#footer { 
+  /* width: 100%; */
+  /* height: 6rem; */
+  background-color: #E84A5F;
+}
+@media screen and (max-width: 480px) {
+
+  #footer{
+    background-color: #0f1661;
+  }
+}
+
+
+
+
+.win {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  transform-origin: 50% 50%;
+  transform-origin: center;
+  width: 300px;
+  height: 300px;
+  margin-top: -60px;
+  margin-left: -20px;
+  padding-top: 140px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+ .win h2 {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 100px;
+    text-shadow: 0px 0px 50px white;
+    text-align: center;
+  }
