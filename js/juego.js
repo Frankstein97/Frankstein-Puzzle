@@ -1,4 +1,20 @@
 // LO MISMO PERO CAPTURANDO BOTONES DEL DOM: (TENDRIA QUE HABER UNA MEJOR FORMA PARA ACORTAR CODIGO Y NO REPETIRLO PERO POR AHORA ASI FUNCIONA)
+Swal.fire({
+  // icon: 'success',
+      // imageUrl: 'images/init.gif',
+      imageWidth: 300,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+  title: '¡BIENVENIDE!',
+  text: 'Este puzzle puede jugarse con las flechas del teclado, o utilizando los botones de la pantalla.',
+  // showClass: {
+  //   popup: 'animate__animated animate__fadeInDown'
+  // },
+  // hideClass: {
+  //   popup: 'animate__animated animate__fadeOutUp'
+  // }
+})
+
 
 document.getElementById("top").onclick = function clickTop() {
     var nuevaFilaPiezaVacia
@@ -86,7 +102,7 @@ document.getElementById("left").onclick = function clickLeft() {
 }
 // -
 // Arreglo que contiene las intrucciones del juego 
-var instrucciones = [`Comenza moviendo las flechas`, `arma el rompecabezas`, `revela el mensaje al ganar`];
+var instrucciones = [`COMENZA MOVIENDO LAS FLECHAS`, `ARMA EL ROMPECABEZAS`, `REVELA EL MENSAJE AL GANAR`];
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
 
@@ -137,7 +153,7 @@ function mostrarCartelGanador() {
           imageHeight: 200,
           imageAlt: 'Custom image',
       title: 'GANASTE!!!',
-      text: 'Gracias por jugar. Te deseo una excelente giornata :)',
+      text: 'Gracias por jugar. Te deseo una excelente giornata, toma agua :)',
       showClass: {
         popup: 'animate__animated animate__fadeInDown'
       },
